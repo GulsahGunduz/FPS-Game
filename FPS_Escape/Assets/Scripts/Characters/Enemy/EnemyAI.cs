@@ -28,6 +28,7 @@ public class EnemyAI : MonoBehaviour
     {
         if(enemyHealth.IsDead()) 
         {
+            isProvoked = false;
             enabled = false;
             navMeshAgent.enabled = false;
         }
